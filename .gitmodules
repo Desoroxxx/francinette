@@ -6,7 +6,7 @@
 	url = https://github.com/Desoroxxx/libft-war-machine
 [submodule "tests/libft/Tripouille"]
 	path = tests/libft/Tripouille
-	url = https://github.com/xicodomingues/libftTester
+	url = https://github.com/Desoroxxx/libftTester
 [submodule "tests/get_next_line/gnlTester"]
 	path = tests/get_next_line/gnlTester
 	url = https://github.com/xicodomingues/gnlTester
