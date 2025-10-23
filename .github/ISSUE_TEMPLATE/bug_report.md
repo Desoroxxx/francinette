@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report a bug with Francinette
+about: Report a bug with francinette
 title: ''
 labels: ''
 assignees: ''

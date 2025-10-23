@@ -22,7 +22,7 @@ logger = logging.getLogger("utils")
 def show_banner(project):
 	columns = shutil.get_terminal_size((80, 23)).columns
 	#print(columns)
-	message = f"[blue]Welcome to [b][red]Francinette[/b][blue], a 42 tester framework!"
+	message = f"[blue]Welcome to [b][red]francinette[/b][blue], a 42 tester framework!"
 	submessage = f"{project}"
 	project_message = f"[b][yellow]{project}[/b][cyan]"
 	size = 30 - len(submessage)
