@@ -2,31 +2,29 @@
 
 An easy to use testing framework for the 42 projects.
 
-Use `francinette` or `paco` inside a project folder to run it.
+Use `francinette` inside a project folder to run it.
 
 Currently has tests for: `libft`, `ft_printf`, `get_next_line`, `minitalk` and `pipex`.
 
-`Francinette` is only tested and confirmed to work on MacOS on non ARM chips. Some testers may work on
-Linux and ARM, but I give no guaranties of any test working or even compiling.
+## :exclamation: Important
 
-## :exclamation: Important note:
+If you have little to no experience programming, I highly highly highly recommend that you write your own tests first. 
+For example, for `ft_split` try to write a main that tests that your code works in most cases.
+It is also useful to think about corner cases, like what should it return if the string is `""` or `"   "` or `"word"`. 
 
-If you have little to no experience programming, I highly highly highly recommend that you write
-your own tests first. For example, for `ft_split` try to write a main that tests that your code
-works in most cases. It is also useful to think about corner cases, like what should it return
-if the string is `""` or `"   "` or `"word"`. Don't rely just on `francinette` or other tests.
+**Do NOT rely on `francinette` or other testers.**
 
 ### :warning: Write your own tests, It's a very essential part of programming. :warning:
 
 ## Table of Contents
+
 1. [Purpose](#purpose)
 2. [Install](#install)
 3. [Update](#update)
 4. [Running](#Running)
 5. [Uninstall](#uninstall)
 6. [FAQ](#faq)
-7. [Acknowledgments](#acknowledgments)
-
+7. [Credits](#credits)
 
 ## Purpose:
 
@@ -176,14 +174,13 @@ alias paco="$HOME"/francinette/tester.sh
 
 Now it should work. If it does not, don't be afraid to contact me.
 
-## Acknowledgments
+## Credits
 
-* To 42 for providing me this opportunity
-* To [Tripouille](https://github.com/Tripouille) for [libftTester](https://github.com/Tripouille/libftTester), [gnlTester](https://github.com/Tripouille/gnlTester) and [printfTester](https://github.com/Tripouille/printfTester)
-* To [jtoty](https://github.com/jtoty) and [y3ll0w42](https://github.com/y3ll0w42) for [libft-war-machine](https://github.com/y3ll0w42/libft-war-machine)
-* To [alelievr](https://github.com/alelievr) for [libft-unit-test](https://github.com/alelievr/libft-unit-test) and [printf-unit-test](https://github.com/alelievr/printf-unit-test)
-* To [cacharle](https://github.com/cacharle) for [ft_printf_test](https://github.com/cacharle/ft_printf_test)
-* To [ombhd](https://github.com/ombhd) for [Cleaner_42](https://github.com/ombhd/Cleaner_42)
-* To [arsalas](https://github.com/arsalas) for the help in the minitalk tester
-* To [vfurmane](https://github.com/vfurmane) for [pipex-tester](https://github.com/vfurmane/pipex-tester)
-* To [gmarcha](https://github.com/gmarcha) for [pipexMedic](https://github.com/gmarcha/pipexMedic)
+- [xicodomingues](https://github.com/xicodomingues) for the [francinette](https://github.com/xicodomingues/francinette)
+- [Tripouille](https://github.com/Tripouille) for the [libftTester](https://github.com/Tripouille/libftTester), [printfTester](https://github.com/Tripouille/printfTester), and [gnlTester](https://github.com/Tripouille/gnlTester)
+- [alelievr](https://github.com/alelievr) for the [libft-unit-test](https://github.com/alelievr/libft-unit-test), and [printf-unit-test](https://github.com/alelievr/printf-unit-test)
+- [jtoty](https://github.com/jtoty) for the [Libftest](https://github.com/jtoty/Libftest)
+- [0x050f](https://github.com/0x050f) for the [libft-war-machine](https://github.com/jtoty/Libftest)
+- [cacharle](https://github.com/cacharle) for the [ft_printf_test](https://github.com/cacharle/ft_printf_test)
+- [vfurmane](https://github.com/vfurmane) for the [pipex-tester](https://github.com/vfurmane/pipex-tester)
+- [gmarcha](https://github.com/gmarcha) for the [pipexMedic](https://github.com/gmarcha/pipexMedic)
