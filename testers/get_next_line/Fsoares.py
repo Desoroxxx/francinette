@@ -17,7 +17,7 @@ class Fsoares(BaseExecutor):
 
 	name = 'fsoares'
 	folder = 'fsoares'
-	git_url = 'https://github.com/Desoroxxx/francinette/tree/main/testers/get_next_line'
+	git_url = 'https://github.com/Desoroxxx/francinette/tree/main/tests/get_next_line/fsoares'
 	line_regex = re.compile(r"^([^:]+):(.+)$")
 	test_regex = re.compile(r"(\d+)(?:[^ ]+)?\.([^ ]+)")
 

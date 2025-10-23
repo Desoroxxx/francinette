@@ -17,7 +17,7 @@ class Tripouille():
 
 	name = "libftTester"
 	folder = "Tripouille"
-	git_url = "https://github.com/Tripouille/libftTester"
+	git_url = "https://github.com/Desoroxxx/libftTester"
 
 	def __init__(self, tests_dir, temp_dir, to_execute, missing) -> None:
 		self.temp_dir = os.path.join(temp_dir, self.folder)

@@ -52,7 +52,7 @@ class Fsoares(BaseExecutor):
 
 	name = "fsoares"
 	folder = 'fsoares'
-	git_url = 'https://github.com/Desoroxxx/francinette/tree/main/testers/printf'
+	git_url = 'https://github.com/Desoroxxx/francinette/tree/main/tests/printf/fsoares'
 	line_regex = re.compile(r"^([^:]+):(.+)$")
 	test_regex = re.compile(r"(\d+)(?:[^ ]+)?\.([^ ]+)")
 

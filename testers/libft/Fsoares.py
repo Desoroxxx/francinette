@@ -28,7 +28,7 @@ class Fsoares():
 
 	name = "fsoares"
 	folder = name
-	git_url = "https://github.com/Desoroxxx/francinette/tree/main/testers/libft"
+	git_url = "https://github.com/Desoroxxx/francinette/tree/main/tests/libft/fsoares"
 
 	def __init__(self, tests_dir, temp_dir, to_execute: Set[str], missing) -> None:
 		self.temp_dir = os.path.join(temp_dir, self.folder)

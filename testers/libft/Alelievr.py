@@ -22,7 +22,7 @@ class Alelievr():
 
 	name = "libft-unit-test"
 	folder = "alelievr"
-	git_url = "https://github.com/alelievr/libft-unit-test"
+	git_url = "https://github.com/Desoroxxx/libft-unit-test"
 
 	def __init__(self, tests_dir, temp_dir, to_execute: List[str], missing) -> None:
 		self.temp_dir = os.path.join(temp_dir, self.folder)
