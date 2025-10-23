@@ -57,7 +57,7 @@ class Fsoares(BaseExecutor):
 
 	name = "fsoares"
 	folder = 'fsoares'
-	git_url = 'my own tests'
+	git_url = 'https://github.com/Desoroxxx/francinette/tree/main/testers/minitalk'
 	line_regex = re.compile(r"^([^:]+):(.+)$")
 	test_regex = re.compile(r"(\d+)(?:[^ ]+)?\.([^ ]+)")
 
