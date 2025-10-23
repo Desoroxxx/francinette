@@ -70,15 +70,10 @@ if ! grep "francinette=" "$RC_FILE" &> /dev/null; then
 	printf "\nalias francinette=%s/francinette/tester.sh\n" "$HOME" >> "$RC_FILE"
 fi
 
-if ! grep "paco=" "$RC_FILE" &> /dev/null; then
-	echo "Short alias not present. Adding it"
-	printf "\nalias paco=%s/francinette/tester.sh\n" "$HOME" >> "$RC_FILE"
-fi
-
 # print help
 "$HOME"/francinette/tester.sh --help
 
 # automatically replace current shell with new one.
 exec "$SHELL"
 
-printf "\033[33m... and don't forget, \033[1;37mpaco\033[0;33m is not a replacement for your own tests! \033[0m\n"
+printf "\033[33m... and don't forget, francinette is not a replacement for your own tests! \033[0m\n"

@@ -28,12 +28,12 @@ def save_settings(settings):
 
 
 def ignore_this_new_version(settings, new_version):
-	settings['paco']['ignored'] = new_version
+	settings['francinette']['ignored'] = new_version
 	save_settings(settings)
 
 
 def do_not_update_ever(settings):
-	settings['paco']['do_not_update'] = True
+	settings['francinette']['do_not_update'] = True
 	save_settings(settings)
 
 
@@ -41,18 +41,18 @@ def get_settings():
 	try:
 		return toml.load(toml_path)
 	except:
-		return {'paco': {'last_run': None}}
+		return {'francinette': {'last_run': None}}
 
 
-def update_paco():
+def update_francinette():
 	settings = get_settings()
-	if settings['paco'].get('do_not_update', False):
+	if settings['francinette'].get('do_not_update', False):
 		return
 
-	last_run = settings['paco']['last_run']
+	last_run = settings['francinette']['last_run']
 	if last_run and datetime.strptime(last_run, DATETIME_FORMAT) > datetime.now() - timedelta(hours=1):
 		return save_settings(settings)
-	settings['paco']['last_run'] = datetime.strftime(datetime.now(), DATETIME_FORMAT)
+	settings['francinette']['last_run'] = datetime.strftime(datetime.now(), DATETIME_FORMAT)
 
 	try:
 		with urlopen(REPO_URL + "utils/version.py", context=ssl.create_default_context(cafile=certifi.where()), timeout=5) as data:
@@ -62,10 +62,10 @@ def update_paco():
 		return 
 
 	if (vs.parse(current) >= vs.parse(new_version) or
-	    vs.parse(settings['paco'].get('ignored', '0.0.0')) >= vs.parse(new_version)):
+	    vs.parse(settings['francinette'].get('ignored', '0.0.0')) >= vs.parse(new_version)):
 		return save_settings(settings)
 
-	if settings['paco'].get('always', False):
+	if settings['francinette'].get('always', False):
 		do_update()
 		return
 
@@ -79,7 +79,7 @@ def update_paco():
 		if choice.startswith('d'):
 			return do_not_update_ever(settings)
 		if choice.startswith('a'):
-			settings['paco']['always'] = True
+			settings['francinette']['always'] = True
 			break
 		else:
 			print("Please select one of the available options")

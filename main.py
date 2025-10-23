@@ -10,7 +10,6 @@ from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 from git import Repo
-from testers.cpiscine.CPiscine import CPiscine
 from testers.get_next_line.GetNextLine import GetNextLine
 from testers.libft.Libft import Libft
 from testers.minitalk.Minitalk import Minitalk
@@ -18,11 +17,11 @@ from testers.pipex.Pipex import Pipex
 from testers.printf.Printf import Printf
 from utils.ExecutionContext import TestRunInfo, set_contex
 from utils.TerminalColors import TC
-from utils.update import do_update, update_paco
+from utils.update import do_update, update_francinette
 
 logger = logging.getLogger("main")
 
-PROJECTS = [CPiscine, Libft, GetNextLine, Printf, Minitalk, Pipex]
+PROJECTS = [Libft, GetNextLine, Printf, Minitalk, Pipex]
 
 
 def is_repo(string: str):
@@ -151,7 +150,7 @@ def main():
 		do_update()
 		exit(0)
 
-	update_paco()
+	update_francinette()
 
 	if args.clean:
 		file = Path(os.path.realpath(__file__), "../bin/clean_cache.sh").resolve()
@@ -183,7 +182,7 @@ def main():
 		from_git = False
 		git_dir = None
 		if args.git_repo:
-			logger.info(f"paco called from: {original_dir}")
+			logger.info(f"francinette called from: {original_dir}")
 			git_dir = clone(args.git_repo, base, original_dir)
 			if has_vscode():
 				open_vscode(git_dir)
